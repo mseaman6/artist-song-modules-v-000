@@ -8,13 +8,8 @@ class Song
   include Paramable::InstanceMethods
 
   attr_accessor :name, :artist
-#  attr_reader :artist
 
   @@songs = []
-
-#  def artist=(artist)
-#    @artist = artist
-#  end
 
   def self.all
     @@songs
