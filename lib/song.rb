@@ -7,14 +7,14 @@ class Song
   extend Findable::ClassMethods
   include Paramable::InstanceMethods
 
-  attr_accessor :name
-  attr_reader :artist
+  attr_accessor :name, :artist
+#  attr_reader :artist
 
   @@songs = []
 
-  def artist=(artist)
-    @artist = artist
-  end
+#  def artist=(artist)
+#    @artist = artist
+#  end
 
   def self.all
     @@songs
